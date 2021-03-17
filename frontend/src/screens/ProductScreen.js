@@ -13,7 +13,7 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link className="btn btn-primary my-3" to="/"><i class="fas fa-long-arrow-alt-left"></i>  Go Back</Link>
+      <Link className="btn btn-primary my-3" to="/"><i className="fas fa-long-arrow-alt-left"></i>  Go Back</Link>
       <Row>
         <Col md={6}>
           <Image src={image} alt={name} fluid/>

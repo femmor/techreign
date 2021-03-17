@@ -1,0 +1,23 @@
+{
+  "name": "mern-ecommerce",
+  "version": "1.0.0",
+  "description": "Mern shopping cart",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femmor/techreign.git"
+  },
+  "author": "Emmanuel Egomson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/femmor/techreign/issues"
+  },
+  "homepage": "https://github.com/femmor/techreign#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
