@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import colors from "colors"
 import connectDB from "./config/db.js"
 import productRoutes from "./routes/productRoutes.js"
+import { notFound, errorHandler } from "./middleware/errorMiddleware.js"
 
 dotenv.config()
 
@@ -19,6 +20,13 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/products', productRoutes)
+
+// @desc 404 Error middleware
+app.use(notFound)
+
+// @desc Error middleware
+app.use(errorHandler)
+
 
 // Run Server
 app.listen(PORT, () => {
